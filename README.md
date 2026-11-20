@@ -9,7 +9,7 @@ Proyecto desarrollado en el marco de la asignatura **TEL351 — Seminario de Tel
 ## Características principales
 
 * **Entorno Multiagente (`CariocaEnv`):** Implementado sobre la API `AECEnv` de PettingZoo con máscara de acciones válidas (`action_mask`), soporte para las 8 rondas oficiales de contratos (tríos y escalas), 2 mazos ingleses + 4 comodines (108 cartas) y sistema de recompensas configurable.
-* **Modelo Probabilístico (`ModeloRobo`):** Calcula en tiempo real el conjunto de cartas no vistas ($R_t \cup M_t^{\text{rival}}$) y estima la probabilidad exacta de robar una carta útil del mazo o de completar el contrato en el turno actual: $P(\text{carta\_robada} \mid R_t)$.
+* **Modelo Probabilístico (`ModeloRobo`):** Calcula en tiempo real el conjunto de cartas no vistas ($R_t \cup M_t^{\text{rival}}$) y estima la probabilidad exacta de robar una carta útil del mazo o de completar el contrato en el turno actual: $P(\text{carta robada} \mid R_t)$.
 * **Agentes Implementados:**
   * `PoliticaHeuristica`: Política determinista $\pi: S \to A$ basada en 5 reglas estratégicas (explotación de descarte útil, robo exploratorio, bajada prioritaria, vaciado acelerado en mesa sin inmovilizar comodines y descarte seguro de alto puntaje).
   * `PoliticaAleatoria`: Agente baseline que selecciona uniformemente entre las acciones legales disponibles.
