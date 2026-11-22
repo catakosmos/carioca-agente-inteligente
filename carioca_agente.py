@@ -56,7 +56,7 @@ class ReglasCarioca:
     penalizar_descarte_util: bool = True
 
     def valor_rango(self, rango: int) -> int:
-        """Puntaje de una carta segun su rango (PENDIENTE de confirmar)."""
+        """Puntaje de una carta segun su rango."""
         if rango == 0:
             return 25                    # comodin
         if rango == 1:
@@ -66,7 +66,7 @@ class ReglasCarioca:
         return rango                     # 2..9
 
     def comodines_ok(self, n_naturales: int, n_comodines: int) -> bool:
-        """Una combinacion necesita mas naturales que comodines (PENDIENTE)."""
+        """Una combinacion necesita mas naturales que comodines."""
         return n_comodines == 0 or (n_naturales >= 2 and n_comodines < n_naturales)
 
 
